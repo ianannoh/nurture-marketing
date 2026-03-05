@@ -1,1 +1,13 @@
-<p>navbar works!</p>
+<nav [class.show]="showNav">
+  <img routerLink="/" src="/assets/nav/nurture-marketing-logo.jpeg" alt="">
+
+  <p (click)="setNav()" class="hamburger">&#9776;</p>
+
+  <ul>
+    <li [routerLinkActiveOptions]={exact:true} routerLink="/" routerLinkActive="routerLinkActive"><a>HOME</a></li>
+    <li routerLink="clients" routerLinkActive="routerLinkActive"><a>CLIENTS</a></li>
+    <li routerLink="contact" routerLinkActive="routerLinkActive"><a>CONTACT</a></li>
+  </ul>
+
+  <svg (click)="setNav()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#008000FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</nav>
