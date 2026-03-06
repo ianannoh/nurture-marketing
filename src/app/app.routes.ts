@@ -11,18 +11,28 @@ export const routes: Routes = [
     title: 'Home | Nurture Marketing',
   },
   {
-    path: 'About',
+    path: 'about',
     component: AboutPageComponent,
     title: 'About | Nurture Marketing',
   },
   {
-    path: 'clients',
+    path: 'portfolio',
+    component: HomePageComponent,
+    title: 'Portfolio | Nurture Marketing',
+  },
+  {
+    path: 'newsletters',
+    component: HomePageComponent,
+    title: 'Newsletters | Nurture Marketing',
+  },
+  {
+    path: 'partners',
     component: ClientsPageComponent,
     title: 'Clients | Nurture Marketing',
   },
   {
-    path: 'contact',
+    path: 'get-in-touch',
     component: ContactPageComponent,
-    title: 'Contact | Nurture Marketing',
+    title: 'Get In Touch | Nurture Marketing',
   }
 ];

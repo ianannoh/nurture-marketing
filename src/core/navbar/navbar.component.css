@@ -3,7 +3,6 @@ nav {
   top: 0;
   width: 100%;
   background-color: white;
-  color: green;
   display: flex;
   align-items: center;
   height: 4rem;
@@ -13,6 +12,7 @@ img {
   height: 3rem;
   width: 3rem;
   margin: 0 2rem;
+  cursor: pointer;
 }
 
 ul {
@@ -25,16 +25,21 @@ ul {
 }
 
 li {
-  display: flex;
-  align-items: center;
   height: 100%;
   font-size: 0.875rem;
   font-weight: 700;
-  border-top: 4px solid transparent;
-  transition: 0.5s;
 }
 
-li:hover {
+a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-top: 4px solid transparent;
+  transition: 0.5s;
+  color: green;
+}
+
+a:hover {
   border-top: 4px solid green;
   cursor: pointer;
   transition: 0.5s;
@@ -65,10 +70,9 @@ svg {
 
 
 
-@media (max-width: 736px) {
+@media (max-width: 768px) {
   nav {
     height: 3rem;
-    border-bottom: 1px solid green;
   }
 
   .hamburger {
@@ -108,18 +112,22 @@ svg {
       justify-content: center;
       align-items: center;
       background-color: white;
-      z-index: 2;
-      gap: 1rem;
+      z-index: 9;
+      gap: 0;
     }
 
     li {
       width: 100%;
       height: max-content;
+    }
+
+    a {
       padding: 1rem 0;
+      width: 100%;
       justify-content: center;
     }
 
-    li:hover {
+    a:hover {
       border: none;
       background-color: green;
       color: white;
@@ -134,7 +142,7 @@ svg {
     svg {
       visibility: visible;
       opacity: 1;
-      z-index: 3;
+      z-index: 10;
       transition: 0.5s;
       padding: 5px;
       border-radius: 50%;
@@ -145,5 +153,13 @@ svg {
       background-color: rgba(0, 128, 0, 0.3);
       transition: 0.5s;
     }
+  }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  ul {
+    gap: 1.5rem;
   }
 }

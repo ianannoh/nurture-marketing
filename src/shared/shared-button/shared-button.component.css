@@ -1,0 +1,8 @@
+a {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
