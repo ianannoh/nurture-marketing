@@ -1,15 +1,24 @@
 <nav [class.show]="showNav">
   <img routerLink="/" src="/assets/nav/nurture-marketing-logo.jpeg" alt="">
 
-  <p (click)="setNav()" class="hamburger">&#9776;</p>
+  <p (click)="openNav()" class="hamburger">&#9776;</p>
 
-  <ul>
-    <li><a (click)="setNav()" [routerLinkActiveOptions]={exact:true} routerLink="about" routerLinkActive="routerLinkActive">ABOUT</a></li>
-    <li><a (click)="setNav()" routerLink="partners" routerLinkActive="routerLinkActive">PARTNERS</a></li>
-    <li><a (click)="setNav()" routerLink="portfolio" routerLinkActive="routerLinkActive">PORTFOLIO</a></li>
-    <li><a (click)="setNav()" routerLink="newsletters" routerLinkActive="routerLinkActive">NEWSLETTERS</a></li>
-    <li><a (click)="setNav()" routerLink="get-in-touch" routerLinkActive="routerLinkActive">GET IN TOUCH</a></li>
+  <ul class="links">
+    <li (click)="openSubLinks()">
+      <a routerLink="about" routerLinkActive="routerLinkActive" [class.show]="showSubLinks">ABOUT</a>
+
+      <div>
+        <ul>
+          <li><a (click)="closeNav()" routerLink="about" routerLinkActive="routerLinkActive">ABOUT 1</a></li>
+          <li><a>ABOUT 2</a></li>
+          <li><a>ABOUT 3</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a (click)="closeNav()" routerLink="partners" routerLinkActive="routerLinkActive">SERVICES</a></li>
+    <li><a (click)="closeNav()" routerLink="newsletters" routerLinkActive="routerLinkActive">NEWSLETTERS</a></li>
+    <li><a (click)="closeNav()" routerLink="get-in-touch" routerLinkActive="routerLinkActive">GET IN TOUCH</a></li>
   </ul>
 
-  <svg (click)="setNav()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#008000FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  <svg class="primary-close" (click)="closeNav()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#008000FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
 </nav>

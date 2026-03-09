@@ -13,9 +13,16 @@ img {
   width: 3rem;
   margin: 0 2rem;
   cursor: pointer;
+  transform: scale(1.0);
+  transition: .3s;
 }
 
-ul {
+img:hover {
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+.links {
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -28,6 +35,7 @@ li {
   height: 100%;
   font-size: 0.875rem;
   font-weight: 700;
+  position: relative;
 }
 
 a {
@@ -35,19 +43,63 @@ a {
   align-items: center;
   height: 100%;
   border-top: 4px solid transparent;
-  transition: 0.5s;
+  transition: 0.3s;
   color: green;
 }
 
 a:hover {
   border-top: 4px solid green;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
+}
+
+li:hover {
+
+  div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+}
+
+li > div {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  height: max-content;
+  background-color: white;
+  padding-bottom: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+li > div > ul {
+  width: max-content;
+  margin: 0 auto;
+
+  li {
+    width: max-content;
+  }
+
+  a {
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #595959;
+    font-size: 0.7rem;
+    font-weight: 300;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+  }
+
+  a:hover {
+    border: none;
+    border-bottom: 1px solid black;
+  }
 }
 
 .routerLinkActive {
   border-top: 4px solid green;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .hamburger {
@@ -59,7 +111,7 @@ a:hover {
   color: green;
 }
 
-svg {
+.primary-close {
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;
@@ -70,7 +122,9 @@ svg {
 
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 1080px) {
   nav {
     height: 3rem;
   }
@@ -79,11 +133,11 @@ svg {
     display: block;
   }
 
-  ul {
+  .links {
     visibility: hidden;
     opacity: 0;
     transform: translateX(100%);
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   img {
@@ -95,14 +149,14 @@ svg {
   nav.show {
     .hamburger {
       transform: rotate(45deg);
-      transition: .5s;
+      transition: .3s;
     }
 
-    ul {
+    .links {
       visibility: visible;
       opacity: 1;
       transform: translateX(0);
-      transition: 0.5s;
+      transition: 0.3s;
       position: fixed;
       top: 0;
       left: 0;
@@ -116,6 +170,20 @@ svg {
       gap: 0;
     }
 
+    a.show + div {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity .3s;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     li {
       width: 100%;
       height: max-content;
@@ -125,13 +193,48 @@ svg {
       padding: 1rem 0;
       width: 100%;
       justify-content: center;
+      border: none;
     }
 
     a:hover {
-      border: none;
       background-color: green;
       color: white;
     }
+
+    li > div > ul {
+      width: 100%;
+
+      li {
+        width: 100%;
+      }
+
+      a {
+        font-size: 0.875rem;
+        font-weight: 700;
+        border: none;
+      }
+
+      a:hover {
+        background-color: black;
+        color: white;
+        border: none;
+      }
+
+      a.routerLinkActive {
+        background-color: black;
+        color: white;
+      }
+    }
+
+    /*li:hover { TODO: Bring this back before merging to production*/
+
+    /*  div {*/
+    /*    visibility: hidden;*/
+    /*    opacity: 0;*/
+    /*    transition: opacity .3s;*/
+    /*  }*/
+    /*}*/
+
 
     .routerLinkActive {
       background-color: green;
@@ -139,27 +242,27 @@ svg {
       border: none;
     }
 
-    svg {
+    .primary-close {
       visibility: visible;
       opacity: 1;
       z-index: 10;
-      transition: 0.5s;
+      transition: 0.3s;
       padding: 5px;
       border-radius: 50%;
       cursor: pointer;
     }
 
-    svg:hover {
+    .primary-close:hover {
       background-color: rgba(0, 128, 0, 0.3);
-      transition: 0.5s;
+      transition: 0.3s;
     }
   }
 }
 
 
 
-@media (min-width: 769px) and (max-width: 1080px) {
-  ul {
-    gap: 1.5rem;
-  }
-}
+/*@media (min-width: 769px) and (max-width: 1080px) {*/
+/*  .links {*/
+/*    gap: 1.5rem;*/
+/*  }*/
+/*}*/

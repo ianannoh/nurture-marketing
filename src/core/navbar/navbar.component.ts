@@ -12,8 +12,19 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 })
 export class NavbarComponent {
   protected showNav: boolean = false;
+  protected openNav(): void {
+    this.showNav = true;
+  }
+  protected closeNav(): void {
+    this.showNav = false;
+    this.closeSubLinks();
+  }
 
-  protected setNav(): void {
-    this.showNav = !this.showNav;
+  protected showSubLinks: boolean = false;
+  protected openSubLinks(): void {
+    this.showSubLinks = true;
+  }
+  protected closeSubLinks(): void {
+    this.showSubLinks = false;
   }
 }
