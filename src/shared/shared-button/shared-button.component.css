@@ -3,7 +3,7 @@ a {
   background-color: green;
   color: white;
   padding: 10px 12px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-sizing: border-box;
   transition: 0.5s;
   border: 1px solid transparent;
