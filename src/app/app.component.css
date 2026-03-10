@@ -11,6 +11,16 @@ main {
 
 
 @media (max-width: 768px) {
-  margin-top: 3rem;
-  min-height: calc(100vh - 3rem);
+ main {
+   margin-top: 5rem;
+   min-height: calc(100vh - 3rem);
+ }
+}
+
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  main {
+    margin-top: 5rem;
+    min-height: calc(100vh - 3rem);
+  }
 }
