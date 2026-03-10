@@ -6,7 +6,10 @@ nav {
   display: flex;
   align-items: center;
   height: 4rem;
+  /*border-bottom: 1px solid green;*/
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
 
 img {
   height: 3rem;
