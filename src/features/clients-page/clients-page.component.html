@@ -1,1 +1,32 @@
-<p>clients-page works!</p>
+<app-landing-page imgSrc="/assets/services/marketing-1.jpg">
+  <main-header>What we do</main-header>
+  <description>We help businesses grow and help startups gain the visibility they need.</description>
+</app-landing-page>
+
+<section class="section-one">
+  <h1>Here's how we <br> can help you</h1>
+
+  <div [class.show]="showDropdown" class="container" (scroll)="onScroll($event)" #faq>
+    @for (s of services; track s.id) {
+      <div class="box">
+        <div (click)="setDropdown(s.id)" class="heading">
+          <h4>0{{s.id}} {{s.header}}</h4>
+
+          <img [class.show]="selectedId == s.id && showDropdown" src="/assets/services/dropdown-icon.svg" alt="">
+        </div>
+
+       <div [class.show]="selectedId == s.id && showDropdown" class="details">
+         <p>{{s.description}}</p>
+
+         <h5>Related services include:</h5>
+
+         <ul>
+           @for (p of s.points; track p.id) {
+             <li>{{p.point}}</li>
+           }
+         </ul>
+       </div>
+      </div>
+    }
+  </div>
+</section>

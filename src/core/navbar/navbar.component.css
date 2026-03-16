@@ -6,7 +6,6 @@ nav {
   display: flex;
   align-items: center;
   height: 4rem;
-  /*border-bottom: 1px solid green;*/
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
@@ -47,11 +46,11 @@ a {
   height: 100%;
   border-top: 4px solid transparent;
   transition: 0.3s;
-  color: green;
+  color: var(--primary-color);
 }
 
 a:hover {
-  border-top: 4px solid green;
+  border-top: 4px solid var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -102,7 +101,7 @@ li > div > ul {
 }
 
 .routerLinkActive {
-  border-top: 4px solid green;
+  border-top: 4px solid var(--primary-color);
   transition: 0.3s;
 }
 
@@ -112,7 +111,7 @@ li > div > ul {
   right: 1rem;
   top: 0;
   font-size: 2rem;
-  color: green;
+  color: var(--primary-color);
 }
 
 .primary-close {
@@ -201,7 +200,7 @@ li > div > ul {
     }
 
     a:hover {
-      background-color: green;
+      background-color: var(--primary-color);
       color: white;
     }
 
@@ -241,7 +240,7 @@ li > div > ul {
 
 
     .routerLinkActive {
-      background-color: green;
+      background-color: var(--primary-color);
       color: white;
       border: none;
     }
@@ -257,7 +256,7 @@ li > div > ul {
     }
 
     .primary-close:hover {
-      background-color: rgba(0, 128, 0, 0.3);
+      background-color: var(--primary-color-hover);
       transition: 0.3s;
     }
   }

@@ -22,9 +22,9 @@ export const routes: Routes = [
     title: 'Newsletters | Nurture Marketing',
   },
   {
-    path: 'partners',
+    path: 'services',
     component: ClientsPageComponent,
-    title: 'Clients | Nurture Marketing',
+    title: 'Services | Nurture Marketing',
   },
   {
     path: 'get-in-touch',

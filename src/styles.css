@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #3a7d44;
+  --primary-color-hover: #254d32;
+}
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -67,7 +72,7 @@ small {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb {
