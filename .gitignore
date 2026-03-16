@@ -40,3 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+*.js
+.angular/cache/19.2.13/fr-website/.tsbuildinfo
+/.angular
+./angular/*

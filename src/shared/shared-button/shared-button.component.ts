@@ -1,0 +1,16 @@
+import {Component, Input} from '@angular/core';
+import {RouterLink} from '@angular/router';
+
+@Component({
+  selector: 'app-shared-button',
+  imports: [
+    RouterLink
+  ],
+  templateUrl: './shared-button.component.html',
+  styleUrl: './shared-button.component.css'
+})
+export class SharedButtonComponent {
+  @Input() route: string = '';
+  @Input() className: string = '';
+
+}

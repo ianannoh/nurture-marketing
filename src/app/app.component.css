@@ -1,0 +1,26 @@
+app-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+main {
+  margin-top: 4rem;
+  min-height: calc(100vh - 4rem);
+}
+
+
+@media (max-width: 768px) {
+ main {
+   margin-top: 3rem;
+   min-height: calc(100vh - 3rem);
+ }
+}
+
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  main {
+    margin-top: 3rem;
+    min-height: calc(100vh - 3rem);
+  }
+}
