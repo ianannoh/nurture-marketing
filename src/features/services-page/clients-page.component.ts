@@ -8,7 +8,7 @@ interface IService {
   points: any[]
 }
 @Component({
-  selector: 'app-clients-page',
+  selector: 'app-services-page',
   imports: [
     LandingPageComponent
   ],
