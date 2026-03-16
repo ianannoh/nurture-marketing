@@ -8,7 +8,7 @@
 
   <div [class.show]="showDropdown" class="container" (scroll)="onScroll($event)" #faq>
     @for (s of services; track s.id) {
-      <div class="box">
+      <div [class.show]="selectedId == s.id && showDropdown" class="box">
         <div (click)="setDropdown(s.id)" class="heading">
           <h4>0{{s.id}} {{s.header}}</h4>
 
