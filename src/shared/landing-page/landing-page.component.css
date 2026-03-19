@@ -14,8 +14,16 @@ img {
   height: 100%;
   position: absolute;
   z-index: -1;
-  animation: breathe 7s ease-in-out infinite;
+  animation: breathe 12s ease-in-out infinite;
   object-fit: cover;
+}
+
+.two {
+  display: none;
+}
+
+.three {
+  display: none;
 }
 
 div {
@@ -25,7 +33,7 @@ div {
   align-items: flex-start;
 }
 
-p {
+h4 {
   margin: 1rem 0;
   color: white;
 }
@@ -34,8 +42,25 @@ h1 {
   color: white;
 }
 
-.bg {
+.service {
   background: rgba(0, 0, 0, 0.5);
+
+  app-shared-button {
+    display: none;
+  }
+}
+
+.contact {
+  background: none;
+
+  div {
+    display: none;
+  }
+
+  img {
+    animation: none;
+    object-position: left;
+  }
 }
 
 @keyframes breathe {
@@ -56,5 +81,24 @@ h1 {
   div {
     margin-left: 0;
     width: 85%;
+  }
+
+  .one {
+    display: none;
+  }
+
+  .two {
+    display: block;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  .three {
+    display: block;
+  }
+
+  .one {
+    display: none;
   }
 }

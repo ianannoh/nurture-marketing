@@ -13,5 +13,7 @@ import {NgClass} from '@angular/common';
 })
 export class LandingPageComponent {
   @Input() imgSrc: string = '';
+  @Input() imgSrc1: string = '';
+  @Input() imgSrc2: string = '';
   @Input() className: string = '';
 }

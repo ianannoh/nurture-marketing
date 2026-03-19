@@ -2,11 +2,13 @@
   <div>
     <h1><ng-content select="main-header"></ng-content></h1>
 
-    <p><ng-content select="description"></ng-content></p>
+    <h4><ng-content select="description"></ng-content></h4>
 
     <app-shared-button>Discover more</app-shared-button>
 
   </div>
 
-  <img [src]="imgSrc" alt="">
+  <img [src]="imgSrc" alt="" class="one">
+  <img [src]="imgSrc1" alt="" class="two">
+  <img [src]="imgSrc2" alt="" class="three">
 </section>
