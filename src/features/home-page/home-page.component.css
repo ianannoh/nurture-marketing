@@ -21,6 +21,10 @@
   }
 }
 
+/*#philosophy {*/
+/*  scroll-margin-top: 4rem;*/
+/*}*/
+
 
 
 /*Section two*/
@@ -234,10 +238,10 @@
   padding: 4rem 0;
   color: white;
   background-color: var(--primary-color-hover);
+  text-align: center;
 
   p {
     width: 40%;
-    text-align: center;
     margin: 1.5rem 0;
   }
 }
@@ -335,6 +339,15 @@
     }
 
     div {
+      width: 80%;
+    }
+  }
+
+  .section-six {
+    padding: 4rem 1rem;
+    box-sizing: border-box;
+
+    p {
       width: 80%;
     }
   }
@@ -473,5 +486,14 @@
      width: 40%;
    }
  }
+
+  .section-six {
+    padding: 4rem 1rem;
+    box-sizing: border-box;
+
+    p {
+      width: 80%;
+    }
+  }
 
 }
