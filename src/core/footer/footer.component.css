@@ -52,6 +52,7 @@ p {
   footer {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    width: 90%;
   }
 
   .icons {
@@ -60,5 +61,13 @@ p {
 
   p {
     margin-top: 1rem;
+  }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 108px) {
+  footer {
+    width: 90%;
   }
 }

@@ -32,7 +32,7 @@ export class ClientsPageComponent implements AfterViewInit {
     },
     {
       id: 2,
-      header: 'Paid Advertisement:',
+      header: 'Paid Advertisement',
       description: 'At Nurture Marketing, we use Paid Advertising to help businesses reach the right audience at the right time with precision and speed. Paid ads allow brands to appear instantly in front of potential customers across multiple platforms, ensuring visibility exactly when people are ready to take action. Nurture Marketing transforms advertising budgets into strategic growth engines, helping businesses generate leads, increase brand visibility, and convert attention into measurable results.',
       points: [
         {id: 1, point: 'Audience targeting'},

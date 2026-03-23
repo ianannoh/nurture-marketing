@@ -10,7 +10,7 @@
     @for (s of services; track s.id) {
       <div [class.show]="selectedId == s.id && showDropdown" class="box">
         <div (click)="setDropdown(s.id)" class="heading">
-          <h4>0{{s.id}} {{s.header}}</h4>
+          <h4>0{{s.id}}&#32; &#32; &#32;{{s.header}}</h4>
 
           <img [class.show]="selectedId == s.id && showDropdown" src="/assets/services/dropdown-icon.svg" alt="">
         </div>
