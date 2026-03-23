@@ -83,22 +83,26 @@ h1 {
     width: 85%;
   }
 
-  .one {
-    display: none;
-  }
+ .contact {
+   .one {
+     display: none;
+   }
 
-  .two {
-    display: block;
-  }
+   .two {
+     display: block;
+   }
+ }
 }
 
 
 @media (min-width: 769px) and (max-width: 1080px) {
-  .three {
-    display: block;
-  }
+ .contact {
+   .three {
+     display: block;
+   }
 
-  .one {
-    display: none;
-  }
+   .one {
+     display: none;
+   }
+ }
 }
