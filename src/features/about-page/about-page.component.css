@@ -2,18 +2,23 @@
 .section-one {
   text-align: center;
   margin-top: 6rem;
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 
   h1 {
     margin-bottom: 2rem;
   }
 
   p {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
   }
 
   p:nth-of-type(2) {
-    width: 75%;
+    width: 85%;
     margin-top: 1rem;
   }
 }
@@ -21,15 +26,15 @@
 
 /*Section two*/
 .section-two {
-  height: 40rem;
+  height: 32rem;
   width: 100%;
   position: relative;
   margin-top: 4rem;
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
 
   img {
@@ -44,11 +49,16 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    max-width: 65rem;
+    margin-inline: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 
   .card {
-    max-width: 25rem;
-    height: 25rem;
+    width: 50%;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +98,11 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 
   h1 {
     text-align: center;
@@ -98,9 +113,11 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    width: 100%;
 
     div {
-      width: 30rem;
+      width: 50%;
+      flex-shrink: 0;
     }
 
     h3 {
@@ -125,7 +142,7 @@
 
   img {
     height: 30rem;
-    width: 30rem;
+    width: 50%;
     border-radius: 15px;
     object-fit: cover;
     object-position: center;
@@ -154,18 +171,21 @@
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
+    width: 85%;
+    max-width: 35rem;
+    padding: 0;
 
 
     h1 {
-      width: 80%;
+      width: 100%;
     }
 
     p {
-      width: 80%;
+      width: 100%;
     }
 
     p:nth-of-type(2) {
-      width: 80%;
+      width: 95%;
       margin-top: 1rem;
     }
   }
@@ -178,10 +198,13 @@
      justify-content: flex-start;
       align-items: center;
       margin: 3rem 0;
+      width: 85%;
+      max-width: 35rem;
+      padding: 0;
     }
 
     .card {
-      max-width: 80%;
+      width: 100%;
       height: auto;
       padding: 0.5rem 0;
 
@@ -193,17 +216,16 @@
 
   .section-three {
     align-items: center;
-
-    h1 {
-      width: 80%;
-    }
+    width: 85%;
+    max-width: 35rem;
+    padding: 0;
 
     .container {
       flex-direction: column;
       align-items: center;
 
       div {
-        width: 80%;
+        width: 100%;
       }
     }
 
@@ -234,48 +256,7 @@
 
   .section-two {
     .card {
-      max-width: 22rem;
-    }
-  }
-
-  .section-three {
-    .container {
-      width: 100%;
-      gap: 1rem;
-
-      div {
-        width: 50%;
-        padding-right: 1rem;
-        box-sizing: border-box;
-      }
-    }
-
-    .container:nth-of-type(2) {
-      div {
-        padding-left: 1rem;
-      }
-    }
-
-    img {
-      width: 50%;
-      border-radius: 0;
-    }
-  }
-}
-
-
-
-
-
-@media (min-width: 1550px) {
-  .section-one {
-    p {
-      width: 50%;
-    }
-
-    p:nth-of-type(2) {
-      width: 60%;
-      margin-top: 1rem;
+      height: 23rem;
     }
   }
 

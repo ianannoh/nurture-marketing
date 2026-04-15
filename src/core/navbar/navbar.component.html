@@ -10,7 +10,7 @@
      <li (click)="closeNav()">
        <a routerLink="about" routerLinkActive="routerLinkActive" [class.show]="showSubLinks">ABOUT</a>
      </li>
-     <li>
+     <li (click)="closeNav()">
        <a (click)="openSubLinks()"  routerLink="services" routerLinkActive="routerLinkActive">SERVICES</a>
 
        <!--      <div>-->
