@@ -117,7 +117,6 @@
 
     div {
       width: 50%;
-      flex-shrink: 0;
     }
 
     h3 {
