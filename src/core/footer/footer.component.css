@@ -3,9 +3,11 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 1rem;
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem 0;
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+  padding: 2rem;
+  box-sizing: border-box;
   border-top: 1px solid var(--primary-color);
 }
 
@@ -52,7 +54,9 @@ p {
   footer {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    width: 90%;
+    width: 85%;
+    max-width: 35rem;
+    padding: 0;
   }
 
   .icons {
@@ -67,7 +71,5 @@ p {
 
 
 @media (min-width: 769px) and (max-width: 108px) {
-  footer {
-    width: 90%;
-  }
+
 }
