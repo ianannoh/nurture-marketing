@@ -3,8 +3,9 @@
   text-align: center;
   padding: 0 2rem;
   width: 100%;
+  max-width: 65rem;
   box-sizing: border-box;
-  margin: 4rem 0 2rem 0;
+  margin: 4rem auto 2rem auto;
 
   h2 {
     margin-bottom: 2rem;
@@ -16,7 +17,7 @@
   }
 
   p {
-    width: 55%;
+    width: 85%;
     margin: 0 auto;
   }
 }
@@ -51,10 +52,15 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    max-width: 65rem;
+    margin-inline: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 
   .card {
-    width: 28%;
+    width: 33.33%;
     height: 18rem;
     display: flex;
     justify-content: center;
@@ -107,7 +113,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 0;
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 65rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
 
   h2 {
     margin: 1rem 0;
@@ -116,15 +126,17 @@
   .container {
     margin: 2rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
+    width: 100%;
   }
 
   .box {
-    width: 17rem;
+    width: 33.33%;
     box-shadow: 7px 4px 20px 0 rgba(0, 0, 0, 0.08);
     padding-bottom: 1rem;
     border-radius: 20px;
+    flex-shrink: 0;
 
     h5, p {
       padding: 0 1rem;
@@ -159,12 +171,15 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 0 2rem;
   box-sizing: border-box;
   width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+  margin-top: 2rem;
 
   img {
-    width: 40%;
+    width: 45%;
     height: 30rem;
     object-fit: cover;
     object-position: center;
@@ -172,7 +187,7 @@
   }
 
   .container {
-    width: 50%;
+    width: 55%;
   }
 
   h5 {
@@ -203,6 +218,9 @@
 .section-five {
   width: 100%;
   margin: 4rem auto;
+  max-width: 65rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -210,13 +228,13 @@
 
   em {
     font-size: 2rem;
-    width: 50%;
+    width: 100%;
   }
 
   div {
     border-top: 1px solid var(--primary-color);
     margin-top: 1.5rem;
-    width: 25%;
+    width: 50%;
   }
 
   h5 {
@@ -232,16 +250,25 @@
 
 /*Section six*/
 .section-six {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 4rem 0;
+  width: 100%;
   color: white;
   background-color: var(--primary-color-hover);
   text-align: center;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 65rem;
+    margin-inline: auto;
+    box-sizing: border-box;
+  }
+
   p {
-    width: 40%;
+    width: 70%;
     margin: 1.5rem 0;
   }
 }
@@ -252,8 +279,12 @@
 
 @media(max-width: 768px) {
   .section-one {
+    width: 85%;
+    max-width: 35rem;
+    padding: 0;
+
     p {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -267,6 +298,7 @@
       overflow-x: auto;
       scroll-behavior: smooth;
       width: 100%;
+      max-width: 35rem;
       padding: 0 1rem;
 
       &::-webkit-scrollbar {
@@ -311,6 +343,7 @@
     .box {
       flex: 0 0 auto;
       margin-bottom: 1rem;
+      width: 80%;
     }
   }
 

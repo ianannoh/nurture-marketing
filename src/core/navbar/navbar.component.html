@@ -1,30 +1,32 @@
 <nav [class.show]="showNav">
-  <img routerLink="/" src="/assets/nav/nurture_green_icon.svg" alt="">
+ <div class="container">
+   <img routerLink="/" src="/assets/nav/nurture_green_icon.svg" alt="">
 
-  <p (click)="openNav()" class="hamburger">&#9776;</p>
+   <p (click)="openNav()" class="hamburger">&#9776;</p>
 
-  <ul class="links">
-    <li><a (click)="closeNav()" routerLink="/" routerLinkActive="routerLinkActive" [routerLinkActiveOptions]={exact:true}>HOME</a></li>
+   <ul class="links">
+     <li><a (click)="closeNav()" routerLink="/" routerLinkActive="routerLinkActive" [routerLinkActiveOptions]={exact:true}>HOME</a></li>
 
-    <li (click)="closeNav()">
-      <a routerLink="about" routerLinkActive="routerLinkActive" [class.show]="showSubLinks">ABOUT</a>
-    </li>
-    <li>
-      <a (click)="openSubLinks()"  routerLink="services" routerLinkActive="routerLinkActive">SERVICES</a>
+     <li (click)="closeNav()">
+       <a routerLink="about" routerLinkActive="routerLinkActive" [class.show]="showSubLinks">ABOUT</a>
+     </li>
+     <li>
+       <a (click)="openSubLinks()"  routerLink="services" routerLinkActive="routerLinkActive">SERVICES</a>
 
-<!--      <div>-->
-<!--        <ul>-->
-<!--          <li><a (click)="closeNav()" routerLink="about" routerLinkActive="routerLinkActive">Search Engine Optimization </a></li>-->
-<!--          <li><a>Paid Advertising</a></li>-->
-<!--          <li><a>Content creation</a></li>-->
-<!--          <li><a>Social media accounts management</a></li>-->
+       <!--      <div>-->
+       <!--        <ul>-->
+       <!--          <li><a (click)="closeNav()" routerLink="about" routerLinkActive="routerLinkActive">Search Engine Optimization </a></li>-->
+       <!--          <li><a>Paid Advertising</a></li>-->
+       <!--          <li><a>Content creation</a></li>-->
+       <!--          <li><a>Social media accounts management</a></li>-->
 
-<!--        </ul>-->
-<!--      </div>-->
-    </li>
-<!--    <li><a (click)="closeNav()" routerLink="newsletters" routerLinkActive="routerLinkActive">NEWSLETTERS</a></li>-->
-    <li><a (click)="closeNav()" routerLink="get-in-touch" routerLinkActive="routerLinkActive">GET IN TOUCH</a></li>
-  </ul>
+       <!--        </ul>-->
+       <!--      </div>-->
+     </li>
+     <!--    <li><a (click)="closeNav()" routerLink="newsletters" routerLinkActive="routerLinkActive">NEWSLETTERS</a></li>-->
+     <li><a (click)="closeNav()" routerLink="get-in-touch" routerLinkActive="routerLinkActive">GET IN TOUCH</a></li>
+   </ul>
 
-  <svg class="primary-close" (click)="closeNav()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#008000FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+   <svg class="primary-close" (click)="closeNav()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#008000FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+ </div>
 </nav>
