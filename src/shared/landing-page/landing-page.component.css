@@ -27,19 +27,25 @@ img {
 }
 
 div {
-  margin-left: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 h4 {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   color: white;
+  width: 50%;
 }
 
 h1 {
   color: white;
+  width: 40%;
 }
 
 .service {
@@ -74,13 +80,20 @@ h1 {
     align-items: center;
   }
 
-  h1 {
-    font-size: 2.2rem;
+  h4 {
+    width: 100%;
   }
 
+  h1 {
+    font-size: 2.2rem;
+    width: 100%;
+  }
+
+
   div {
-    margin-left: 0;
     width: 85%;
+    max-width: 35rem;
+    padding: 0;
   }
 
  .contact {
@@ -96,6 +109,16 @@ h1 {
 
 
 @media (min-width: 769px) and (max-width: 1080px) {
+  h4 {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    width: 50%;
+  }
+
+
  .contact {
    .three {
      display: block;
