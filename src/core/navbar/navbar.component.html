@@ -4,6 +4,8 @@
   <p (click)="openNav()" class="hamburger">&#9776;</p>
 
   <ul class="links">
+    <li><a (click)="closeNav()" routerLink="/" routerLinkActive="routerLinkActive" [routerLinkActiveOptions]={exact:true}>HOME</a></li>
+
     <li (click)="closeNav()">
       <a routerLink="about" routerLinkActive="routerLinkActive" [class.show]="showSubLinks">ABOUT</a>
     </li>
@@ -20,7 +22,7 @@
 <!--        </ul>-->
 <!--      </div>-->
     </li>
-    <li><a (click)="closeNav()" routerLink="newsletters" routerLinkActive="routerLinkActive">NEWSLETTERS</a></li>
+<!--    <li><a (click)="closeNav()" routerLink="newsletters" routerLinkActive="routerLinkActive">NEWSLETTERS</a></li>-->
     <li><a (click)="closeNav()" routerLink="get-in-touch" routerLinkActive="routerLinkActive">GET IN TOUCH</a></li>
   </ul>
 
