@@ -14,3 +14,12 @@ a:hover {
   background-color: var(--primary-color-hover);
   transition: 0.5s;
 }
+
+.secondary {
+  background-color: #ffc857;
+  color: black;
+}
+
+.secondary:hover {
+  background-color: #b69755;
+}
