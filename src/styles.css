@@ -10,6 +10,11 @@
   font-family: "Onest", sans-serif;
 }
 
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/onest/Onest-Regular.ttf");
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -78,11 +83,6 @@ small {
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 128, 0, 0.7);
   border-radius: 10px;
-}
-
-@font-face {
-  font-family: "Onest";
-  src: url("../public/assets/fonts/onest/Onest-Regular.ttf");
 }
 
 

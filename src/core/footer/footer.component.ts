@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ViewportScroller, Location} from '@angular/common';
+import {Location} from '@angular/common';
 import {NavigationEnd, Router, RouterLink} from '@angular/router';
 import {filter} from 'rxjs';
 
@@ -44,6 +44,8 @@ export class FooterComponent {
         }, 100);
       }
     });
-  }  protected date: Date = new Date();
+  }
+
+  protected date: Date = new Date();
   protected currentYear: number = new Date().getFullYear();
 }
