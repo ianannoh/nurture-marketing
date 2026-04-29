@@ -29,6 +29,6 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
           source: "dist/nurture-marketing/*"
           target: "/home/ian/nurture-marketing"
