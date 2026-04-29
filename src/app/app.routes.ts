@@ -58,5 +58,9 @@ export const routes: Routes = [
       imageUrl: 'https://nurturemarketing.online/assets/nav/nurture_green_icon.svg',
       pageUrl: 'https://nurturemarketing.online/get-in-touch'
     },
+  },
+  {
+    path: '**',
+    redirectTo: '/'
   }
 ];
